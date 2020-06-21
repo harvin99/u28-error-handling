@@ -1,0 +1,16 @@
+html
+  head
+      link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk", crossorigin="anonymous")
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+      script(src='https://kit.fontawesome.com/70644e8b1d.js', crossorigin='anonymous')
+
+      link(rel='stylesheet', href='/custom.css')
+      link(rel="Icon", href='https://cdn.glitch.com/1bbfbd33-efe2-4c09-8be5-c6d0cb08b9be%2Flogo.png?v=1590382358143', type='image/png')
+  body
+    h1.text-center Opps! Why you're here ?
+    p.text-center= message
+    h1.text-center.display-1= status.statusCode
+    .container.d-flex.justify-content-center
+      a.btn.btn-primary(href='/') Back to home
